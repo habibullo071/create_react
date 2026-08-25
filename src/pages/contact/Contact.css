@@ -1,0 +1,212 @@
+.contact-section {
+  background-color: #f6f8fd;
+  padding: 80px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-header .subtitle {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-header .title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #0b0b13;
+  line-height: 1.25;
+}
+
+/* 2-Column Grid */
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* Chap Ustun */
+.info-text {
+  color: #8c93a1;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  max-width: 420px;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-icon {
+  font-size: 32px;
+  color: #0b0b13;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-details .label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0b0b13;
+  margin-bottom: 4px;
+}
+
+.info-details .value {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--main-color);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.info-details .value:hover {
+  opacity: 0.8;
+}
+
+/* O'ng Ustun - Forma */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #0b0b13;
+  outline: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: #a0a6b5;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: var(--main-color);
+  box-shadow: 0 4px 20px rgba(255, 74, 87, 0.1);
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+/* Tugma */
+.submit-btn {
+  background-color: var(--main-color);
+  color: #ffffff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  a{
+    color: white;
+  }
+}
+
+.submit-btn:hover {
+  background-color: var(--main-color);
+  transform: translateY(-2px);
+}
+
+.send-icon {
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+  }
+}
+/* iPad va Planshetlar (max-width: 992px) */
+@media (max-width: 992px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-header .title {
+    font-size: 34px;
+  }
+}
+
+/* Mobil qurilmalar (max-width: 576px) */
+@media (max-width: 576px) {
+  .contact-section {
+    padding: 50px 15px;
+  }
+
+  .contact-header .title {
+    font-size: 26px;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    padding: 14px 16px;
+    font-size: 13px;
+  }
+
+  .submit-btn {
+    width: 100%; /* Tugma to'liq eni bo'ylab yoyiladi */
+    justify-content: center;
+  }
+
+  .info-item {
+    gap: 15px;
+  }
+
+  .info-details .value {
+    font-size: 16px;
+  }
+}

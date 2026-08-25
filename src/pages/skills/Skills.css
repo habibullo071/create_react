@@ -1,0 +1,100 @@
+/* Seksiya foni dinamik --main-color ga ulandi */
+.skills-section {
+  background-color: var(--main-color, #ff4a57);
+  padding: 100px 0;
+  color: #ffffff;
+  transition: background-color 0.4s ease;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Chap taraf */
+.skills-left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.skills-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.skills-title {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.skills-description {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+/* O'ng taraf: Progress barlar */
+.skills-right {
+  flex: 1;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.skill-item {
+  width: 100%;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.skill-name, 
+.skill-percentage {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Progress bar foni (Och rang / shaffof oq) */
+.progress-bar-bg {
+  width: 100%;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* To'ldirilgan oq chiziq */
+.progress-bar-fill {
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+/* Responsive moslashuvchanlik */
+@media (max-width: 992px) {
+  .skills-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .skills-left, .skills-right {
+    max-width: 100%;
+  }
+}

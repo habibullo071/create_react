@@ -1,0 +1,47 @@
+:root {
+  --main-color: #00e6a8;
+}
+
+/* Matn (text) rangi o'zgarishi kerak bo'lganlar */
+.name,
+.cursor,
+.social-links a:hover {
+  color: var(--main-color);
+}
+
+/* Fon (background) rangi o'zgarishi kerak bo'lganlar */
+.btn-say-hello,
+.shape,
+.link-animated::after {
+  background-color: var(--main-color);
+}
+
+/* Border rangi ham moslashishi uchun */
+.btn-say-hello {
+  border-color: var(--main-color);
+}
+
+.btn-say-hello:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+a{
+  text-decoration: none;
+  
+}
+/* Responsive media ta'minlash */
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Kichik ekranlarda sahifa chetidagi masofalarni to'g'rilash */
+
+/* Sahifadan hech narsa o'ngga chiqib ketmasligini ta'minlaydi */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+} 
